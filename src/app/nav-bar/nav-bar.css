@@ -97,7 +97,7 @@ a{
 
 .side-menu {
     position: fixed;
-    top: 69px;
+    top: 85px;
     right: -120%;
     width: 320px;
     height: calc(100vh - 80px);

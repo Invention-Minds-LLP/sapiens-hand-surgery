@@ -229,8 +229,12 @@ a {
     .part-1{
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         gap: 20px;
+    }
+
+    .part-1 img{
+        margin-left: 20%;
     }
 
     .footer-part {
