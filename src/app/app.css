@@ -480,9 +480,9 @@
 }
 
 .years {
-    display: flex;
-    width: 520px;
-    height: 64px;
+    /* display: flex; */
+    width: 296px;
+    height: 70px;
     padding: 3px 13px;
     justify-content: center;
     align-items: center;
@@ -501,8 +501,8 @@
 }
 
 .patients {
-    display: flex;
-    width: 410px;
+    /* display: flex; */
+    width: 328px;
     height: auto;
     padding: 10px;
     justify-content: center;
@@ -528,7 +528,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    width: 24%;
+    /* width: 24%; */
 }
 
 .years {
@@ -676,7 +676,7 @@
 .sings-cards {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     margin-top: 30px;
 }
 
@@ -718,14 +718,14 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 41px;
     letter-spacing: 0.48px;
     padding: 10px 30px;
 }
 
 .sings-card-2 {
     display: flex;
-    width: 437px;
+    width: 475px;
     height: 321px;
     flex-direction: column;
     align-items: flex-start;
@@ -746,7 +746,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.6px;
-    width: 427px;
+    width: 467px;
     height: 75px;
     flex-shrink: 0;
     border-radius: 20px 20px 0 0;
@@ -1204,10 +1204,10 @@
 
 .chat-message-card {
     position: fixed;
-    bottom: 90px;
+    bottom: 70px;
     right: 90px;
     background: #e6edf7;
-    padding: 14px 20px;
+    padding:10px;
     border-radius: 16px;
     width: 240px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -1224,7 +1224,7 @@
     color: #101828;
     text-align: center;
     font-family: Arial;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
