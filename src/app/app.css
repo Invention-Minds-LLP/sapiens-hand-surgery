@@ -137,45 +137,50 @@
     text-transform: capitalize;
 }
 
+.mt {
+    margin-top: 20px;
+}
+
 .list-1 {
     position: relative;
-    top: 0px;
+    top: -40px;
     right: 20px;
 }
 
 .list-2 {
     position: relative;
-    top: 0px;
-    right: 0px;
+    top: -10px;
+    right: 30px;
 }
 
 .list-3 {
     position: relative;
-    top: 0px;
-    right: -40px;
+    top: 30px;
+    right: 0px;
 }
 
 .list-4 {
     position: relative;
-    top: 50px;
+    top: 20px;
+    right: 20px;
 }
 
 .list-5 {
     position: relative;
-    top: 0;
+    top: -40px;
     right: 10px;
 }
 
 .list-6 {
     position: relative;
-    top: 0;
-    right: 30px;
+    top: -10px;
+    right: -10px;
 }
 
 .list-7 {
     position: relative;
-    top: 0;
-    right: 80px;
+    top: 30px;
+    right: 20px;
 }
 
 .symptoms-part {
@@ -222,12 +227,27 @@
     align-items: center;
 }
 
+.list-1 svg,
+.list-2 svg,
+.list-3 svg,
+.list-4 svg,
+.list-5 svg,
+.list-6 svg,
+.list-7 svg {
+    width: 15px;
+    height: auto;
+}
+
+.content-center {
+    height: 320px;
+}
 
 .content-center video {
     width: 323px;
-    height: 180px;
+    height: 320px;
     aspect-ratio: 107/106;
     border-radius: 0 0 400px 400px;
+    object-fit: cover;
 }
 
 .symptoms-content ul li {
@@ -238,7 +258,7 @@
     display: flex;
     width: fit-content;
     height: 40px;
-    padding: 20px;
+    /* padding: 20px; */
     align-items: center;
     gap: 10px;
     color: #FFF;
@@ -284,7 +304,7 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
-    margin-top: 30px;
+    margin-top: 60px;
     background: linear-gradient(180deg, #FFF 14.55%, #FA9967 217.02%);
     padding: 40px 30px;
 }
@@ -353,7 +373,7 @@
 
 .doc-content {
     width: 1387px;
-    height: 534px;
+    height: 554px;
     border-radius: 40px 0 0 40px;
     border: 6px solid #413079;
     background: #FFF;
@@ -376,6 +396,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.ml {
+    margin-left: -18px;
 }
 
 .doc-dept {
@@ -509,14 +533,15 @@
 
 .years {
     position: relative;
-    top: -170px;
+    top: -145px;
     right: 70px;
 }
 
+
 .patients {
     position: relative;
-    top: -150px;
-    left: 50px;
+    top: -125px;
+    left: 40px;
 }
 
 .perfom-part {
@@ -785,7 +810,7 @@
     padding: 2% 10%;
     justify-content: center;
     background: #FFF9F4;
-        margin-top: 6px;
+    margin-top: 6px;
 }
 
 .choose-part {
@@ -889,7 +914,7 @@
     top: 0;
     font-size: 64px;
     font-weight: 700;
-    color: rgba(255, 212, 102, 0.53);
+    color: #F7BC87;
     font-family: Poppins;
 }
 
@@ -1306,11 +1331,11 @@
     }
 
     .list-6 {
-        right: 10px;
+        right: -20px;
     }
 
     .list-4 {
-        top: 70px;
+        top: 30px;
     }
 
     .doc-center img {
@@ -1342,9 +1367,14 @@
     .sings-part {
         height: auto;
     }
+
+    .call-back-form {
+        padding: 20px;
+    }
 }
 
 @media(max-width:1023px) {
+
     .recommended-part,
     .recommended-left,
     .choose-part {
@@ -1353,13 +1383,21 @@
         justify-content: center;
     }
 
-     .banner-part{
-        flex-wrap: wrap-reverse;
-     }
+    .banner-heading {
+        padding: 20px 20px 0;
+    }
 
-         .banner-left{
-            margin-top: 10px;
-         }
+    .banner-part {
+        flex-wrap: wrap-reverse;
+    }
+
+    .banner-left {
+        margin-top: 10px;
+    }
+
+    .banner-sub-para {
+        margin-top: 10px;
+    }
 
     .banner-left,
     .doc-left {
@@ -1373,7 +1411,7 @@
         text-align: center;
     }
 
-    .call-back-form{
+    .call-back-form {
         height: 100%;
         padding: 20px;
     }
@@ -1389,6 +1427,10 @@
     .video-part,
     .video-para {
         width: 100%;
+    }
+
+    .content-right ul {
+        margin-top: 130px;
     }
 
     .symptoms-content {
@@ -1422,6 +1464,10 @@
         line-height: 70px;
     }
 
+    .recommended-part {
+        margin-top: 0;
+    }
+
     .choose-sub-heading {
         font-size: 78px;
         line-height: 70px;
@@ -1443,16 +1489,19 @@
     }
 
     .content-center {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         padding: 20px 0;
     }
 
-     .sings-card-1 .card-heading{
+    .sings-card-1 .card-heading {
         text-align: center;
-     }
+    }
 
-     .choose-part{
+    .choose-part {
         gap: 20px;
-     }
+    }
 }
 
 @media(max-width:767px) {
@@ -1471,7 +1520,7 @@
     .banner-heading,
     .banner-heading span {
         font-size: 30px;
-        padding: 0 20px;
+        /* padding: 0 20px; */
         line-height: 40px;
 
     }
@@ -1535,7 +1584,7 @@
         width: 100%;
         padding: 20px;
     }
-    
+
 
     .doc-name {
         font-size: 22px;
@@ -1574,6 +1623,10 @@
         padding: 10px;
     }
 
+    /* .symptoms-content ul li {
+        align-items: start;
+    } */
+
 
     .doc-list {
         font-size: 14px;
@@ -1589,7 +1642,12 @@
     }
 
     .recommended-right ul {
-        line-height: 40px;
+        line-height: normal;
+        margin-top: 10px;
+    }
+
+    .recommended-right ul li {
+        margin-top: 10px;
     }
 
     .recommended-part {
@@ -1623,6 +1681,19 @@
 
     .chat-message-card {
         right: 70px;
+    }
+
+    .content-left ul,
+    .content-right ul,
+    .content-center ul,
+    .content-center video {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .popup-container {
+        width: 223px;
+        padding: 0;
     }
 
 
